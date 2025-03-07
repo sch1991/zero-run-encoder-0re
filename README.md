@@ -89,4 +89,4 @@
 <br><br>
 
 ## 노트
-- 
+- https://github.com/sch1991/zero-run-encoder-gui
