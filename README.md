@@ -32,7 +32,7 @@
 ### - Zero & One-bit-run 인코더
 #### 기능
 - Zero-bit-run을 지수-골룸 부호화/복호화 한다.
-  ##### 부호화
+  ##### - 부호화
   - ['Zero-bit-run 길이' < 3] 인 경우, ['Zero-bit-run 길이' + 1] 의 결과 값의 이진수 값으로 부호화한다.
   - ['Zero-bit-run 길이' >= 3] 인 경우,
     1. [log2('Zero-bit-run 길이' - 1)] 의 정수 값을 구한다.
@@ -44,7 +44,7 @@
       b. [15 - 1] = 14 ∴ 0b1110
       c. 15bits의 0b0 -> 0b0001110 으로 부호화 된다.
     ```
-  ##### 복호화
+  ##### - 복호화
   - ['연속된 0b0 수' == 0] 인 경우, 2bits 만큼 읽어들여 해당 값만큼 Zero-bit-run 을 복호화 한다.
   - ['연속된 0b0 수' > 0] 인 경우,
     1. '연속된 0b0의 수'를 센다.
@@ -59,7 +59,7 @@
     <br>
     
 - One-bit-run을 단항 부호화/복호화 한다.
-  ##### 부호화
+  ##### - 부호화
     1. ['One-bit-run 길이' - 1] 만큼의 '연속된 0b0'를 추가한다.
     2. (1)의 '연속된 0b0' 끝에 0b1 을 덧붙인다.
     ```
@@ -67,7 +67,7 @@
       i. [15 - 1] = 14 -> 0b0000 0000 0000 00
      ii. 15bits의 0b1 -> 0b0000 0000 0000 001 으로 부호화 된다.
     ```
-  ##### 복호화
+  ##### - 복호화
     1. '연속된 0b0의 수'를 센다.
     2. ['연속된 0b0의 수' + 1] 만큼 One-bit-run 을 복호화 한다.
     ```
@@ -78,15 +78,40 @@
 #### 특징
 - 부호화 : 미리 계산된 부호화 테이블을 활용하여 복호화에 비해 소요 시간이 짧습니다.
 - 복호화 : 미리 계산된 복호화 테이블이 없습니다. 파일 입출력을 2개의 쓰레드로 나눠 처리함으로써 소요 시간을 약 20% 단축 시켰지만 여전히 부호화에 비해 오래 걸립니다.
-<br><br>
+<br><br><br>
 
 ## 컴파일 및 실행 방법
-- 
+### - 환경
+- OS : Windows 10 x64
+- IDE : Dev-C++ 5.11
+- Compiler : GCC 4.9.2 64-bit
+### - 요구 사항
+- Linker Option : -Wl,--stack,67108864
+- Compiler Option : -pthread
+- Include File DirPath : ZeroRunEncoder.0re/include
+### - 실행 방법
+- Encoding Mode :
+```
+ZeroRunEncoder.exe "encoding" "(InputFilePath)" "(OutputFilePath)"
+```
+- Decoding Mode :
+```
+ZeroRunEncoder.exe "decoding" "(0reFilePath)" "(OutputDirPath)"
+```
+- Show Details Mode :
+```
+ZeroRunEncoder.exe "details" "(0reFilePath)"
+```
+<br><br>
+
+## 성능
+- .
 <br><br>
 
 ## 라이선스
-- 
+- 이 프로젝트는 Apache License 2.0 하에 배포됩니다. 자세한 내용은 [LICENSE](LICENSE) 파일을 참조하세요.
 <br><br>
 
 ## 노트
-- https://github.com/sch1991/zero-run-encoder-gui
+- GUI 프로그램에 연결 시켜 사용할 수 있습니다. (URL : https://github.com/sch1991/zero-run-encoder-gui)
+- 리눅스 환경에서의 컴파일을 고려하여 개발하였으나, 직접 테스트 해보진 않았습니다.
