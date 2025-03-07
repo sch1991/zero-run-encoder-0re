@@ -5,6 +5,7 @@
 - 본 프로젝트는 독자적으로 고안한 파일 압축 알고리즘 검증 및 구현을 목표로 합니다.
 - 입력된 데이터를 2-bit 단위로 조건부 확률에 따라 새로운 2-bit 패턴으로 치환(변환)한 후, '연속된 0b0'(Zero-bit-run)를 지수-골룸 부호화, '연속된 0b1'(One-bit-run)를 단항 부호화하는 인코더를 구현합니다.
 - [파일 시그니처 + 키 데이터 + (2-bit 치환 후+)부호화된 데이터] 로 구성된 결과 파일을 생성합니다.
+<br><br><br>
 
 ## 주요 모듈 및 기능
 ### - 조건부 확률 2-bit 패턴 변환기 (베이즈 정리와 무관)
@@ -106,11 +107,11 @@ ZeroRunEncoder.exe "details" "(0reFilePath)"
 
 ## 성능
 - .
-<br><br>
+<br><br><br>
 
 ## 라이선스
 - 이 프로젝트는 Apache License 2.0 하에 배포됩니다. 자세한 내용은 [LICENSE](LICENSE) 파일을 참조하세요.
-<br><br>
+<br><br><br>
 
 ## 노트
 - GUI 프로그램에 연결 시켜 사용할 수 있습니다. (URL : https://github.com/sch1991/zero-run-encoder-gui)
