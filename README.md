@@ -106,7 +106,8 @@ ZeroRunEncoder.exe "details" "(0reFilePath)"
 <br><br>
 
 ## 성능
-| Sample File Name | Original Size | 0re Size | Ratio | Zip Size | Ratio |
+### - ZIP과 비교
+| 샘플 파일 이름(+ 확장자) | 파일 크기(Original) | 파일 크기(0re) | 압축률(0re) | 파일 크기(zip) | 압축률(zip) |
 |------------------|---------------|----------|-------|----------|-------|
 | 1718882289_FinalBaseMesh.obj | 2,581,769 | 2,483,488 | 4% | 735,909 | 71% |
 | 1718882289_Tree1.obj | 51,029,788 | 47,329,545 | 7% | 16,522,441 | 68% |
@@ -122,6 +123,9 @@ ZeroRunEncoder.exe "details" "(0reFilePath)"
 | 1718890846_sample_1280×853.xpm | 2,191,310 | 2,085,931 | 5% | 749,917 | 66% |
 | 1718890846_sample_1920×1280.xpm | 4,924,540 | 4,716,582 | 4% | 1,694,592 | 66% |
 | 1718890846_sample_5184×3456.xpm | 35,849,852 | 34,608,926 | 3% | 12,647,721 | 65% |
+- 샘플 파일들은 이 [URL](https://sample-files-online.com)에서 다운로드 가능.
+<br><br>
+### - 분석
 - .
 <br><br><br>
 
@@ -130,5 +134,6 @@ ZeroRunEncoder.exe "details" "(0reFilePath)"
 <br><br><br>
 
 ## 노트
-- GUI 프로그램에 연결해서 사용할 수 있습니다. (URL : https://github.com/sch1991/zero-run-encoder-gui)
+- GUI 프로그램에 연결해서 사용할 수 있습니다. ([zero-run-encoder-gui
+](https://github.com/sch1991/zero-run-encoder-gui))
 - 리눅스 환경에서 컴파일 가능하도록 고려하였으나, 직접 테스트해 보진 않았습니다.
