@@ -81,30 +81,6 @@
 - 복호화 : 미리 계산된 복호화 테이블이 없다. 파일 입출력을 2개의 스레드로 나눠 처리함으로써 소요 시간을 약 20% 단축 시켰지만 여전히 부호화에 비해 느리다.
 <br><br><br>
 
-## 컴파일 및 실행 방법
-### - 환경
-- OS : Windows 10 x64
-- IDE : Dev-C++ 5.11
-- Compiler : GCC 4.9.2 64-bit
-### - 요구 사항
-- Linker Option : -Wl,--stack,67108864
-- Compiler Option : -pthread
-- Include File DirPath : ZeroRunEncoder.0re/include
-### - 실행 방법
-- Encoding Mode :
-```
-ZeroRunEncoder.exe "encoding" "(InputFilePath)" "(OutputFilePath)"
-```
-- Decoding Mode :
-```
-ZeroRunEncoder.exe "decoding" "(0reFilePath)" "(OutputDirPath)"
-```
-- Show Details Mode :
-```
-ZeroRunEncoder.exe "details" "(0reFilePath)"
-```
-<br><br>
-
 ## 성능
 ### - ZIP과 비교
 | 샘플 파일 이름(+ 확장자) | 파일 크기(Original) | 파일 크기(0re) | 압축률(0re) | 파일 크기(zip) | 압축률(zip) |
@@ -130,6 +106,30 @@ ZeroRunEncoder.exe "details" "(0reFilePath)"
 - 샘플 파일 압축 결과 ZIP 포맷의 압축 알고리즘은 13\~74% 수준의 압축률을 보인 반면, 본 프로젝트의 압축 알고리즘은 2\~8% 압축률에 그쳤으며, 일부 파일에서 마이너스 압축률을 기록하였다.
 - 본 프로젝트의 압축 알고리즘은 대부분의 샘플 파일을 효과적으로 압축하지 못하였기에 실용성이 부족한 것으로 판단된다.
 <br><br><br>
+
+## 컴파일 및 실행 방법
+### - 환경
+- OS : Windows 10 x64
+- IDE : Dev-C++ 5.11
+- Compiler : GCC 4.9.2 64-bit
+### - 요구 사항
+- Linker Option : -Wl,--stack,67108864
+- Compiler Option : -pthread
+- Include File DirPath : ZeroRunEncoder.0re/include
+### - 실행 방법
+- Encoding Mode :
+```
+ZeroRunEncoder.exe "encoding" "(InputFilePath)" "(OutputFilePath)"
+```
+- Decoding Mode :
+```
+ZeroRunEncoder.exe "decoding" "(0reFilePath)" "(OutputDirPath)"
+```
+- Show Details Mode :
+```
+ZeroRunEncoder.exe "details" "(0reFilePath)"
+```
+<br><br>
 
 ## 라이선스
 - 이 프로젝트는 Apache License 2.0 하에 배포됩니다. 자세한 내용은 [LICENSE](LICENSE) 파일을 참조하세요.
