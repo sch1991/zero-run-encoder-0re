@@ -16,7 +16,7 @@
 
 # Requirements : 
 - To compile this program, the following requirements must be met.
-- Linker Option : -Wl,--stack,67108864
+- Linker Option (For Windows) : -Wl,--stack,67108864
 - Compiler Option : -pthread
 - Include File DirPath : ZeroRunEncoder.0re/include
 
