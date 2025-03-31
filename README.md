@@ -120,7 +120,7 @@
 - IDE : Dev-C++ 5.11
 - Compiler : GCC 4.9.2 64-bit
 ### - 요구 사항
-- Linker Option : -Wl,--stack,67108864
+- Linker Option (For Windows) : -Wl,--stack,67108864
 - Compiler Option : -pthread
 - Include File DirPath : ZeroRunEncoder.0re/include
 
@@ -150,4 +150,4 @@ ZeroRunEncoder.exe "details" "(0reFilePath)"
 ## 노트
 - GUI 프로그램에 연결해서 사용할 수 있습니다. ([zero-run-encoder-gui
 ](https://github.com/sch1991/zero-run-encoder-gui))
-- 리눅스 환경에서 컴파일 가능하도록 고려하였으나, 직접 테스트해 보진 않았습니다.
+- 리눅스 환경에서도 컴파일 가능합니다.
