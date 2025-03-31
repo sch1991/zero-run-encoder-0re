@@ -10,6 +10,7 @@
 #include <unistd.h> // for access(), ftruncate().
 #include <pthread.h>
 #include <signal.h>
+#include <errno.h>
 
 #ifdef _WIN32
 	#define mkdir(path, mode) _mkdir(path)
