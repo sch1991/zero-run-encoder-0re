@@ -118,7 +118,7 @@
 ### - 환경
 - OS : Windows 10 x64
 - IDE : Dev-C++ 5.11
-- Compiler : GCC 4.9.2 64-bit
+- Compiler : TDM-GCC 4.9.2 64-bit
 ### - 요구 사항
 - Linker Option (For Windows) : -Wl,--stack,67108864
 - Compiler Option : -pthread
