@@ -7,7 +7,7 @@
 # Environment :
 - Windows 10 x64
 - Dev-C++ 5.11
-- GCC 4.9.2 64-bit
+- TDM-GCC 4.9.2 64-bit
 
 # Usage : 
 - Encoding Mode : ZeroRunEncoder.exe "encoding" InputFilePath OutputFilePath
