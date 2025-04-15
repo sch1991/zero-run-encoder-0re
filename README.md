@@ -166,4 +166,4 @@ ZeroRunEncoder.exe "details" "(0reFilePath)"
 ## 노트
 - GUI 프로그램에 연결해서 사용할 수 있습니다. ([zero-run-encoder-gui
 ](https://github.com/sch1991/zero-run-encoder-gui))
-- 리눅스 환경(우분투)에서 컴파일 가능합니다.
+- 리눅스 환경(Ubuntu)에서 컴파일 가능합니다.
